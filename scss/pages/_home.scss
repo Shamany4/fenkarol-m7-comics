@@ -1,0 +1,624 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.legends {
+  .legends__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .legends__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .legend {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $COLOR_LIGHT_PINK;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .legend__circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+
+      width: 302px;
+      height: 83px;
+
+      border-radius: 302px;
+      background: rgba($COLOR_WHITE, 0.5);
+      mix-blend-mode: soft-light;
+      filter: blur(30px);
+    }
+
+    .legend__title {
+      color: $COLOR_WHITE;
+      text-align: center;
+      font-family: $ffFuturaPT;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: normal;
+
+      span {
+        font-size: 19px;
+      }
+    }
+
+    .legend__picture {
+      position: absolute;
+
+      &.legend__picture--molecule {
+      }
+
+      &.legend__picture--monster {
+      }
+    }
+  }
+
+  .legends__row {
+    &:nth-child(1) {
+      .legend {
+        &:nth-child(1) {
+          width: 100%;
+          height: 102px;
+
+          border-top-left-radius: 10px;
+          clip-path: polygon(0% 0%, 100% 0%, 441px 100%, 0% 100%);
+
+          .legend__picture {
+            &.legend__picture--molecule {
+              width: 21px;
+              top: 15px;
+              right: 69px;
+              mix-blend-mode: lighten;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          min-width: 297px;
+          height: 102px;
+
+          border-top-right-radius: 10px;
+          clip-path: polygon(7px 0%, 100% 0%, 100% 100%, 0% 100%);
+
+          .legend__picture {
+            &.legend__picture--molecule {
+              width: 14px;
+              top: 26px;
+              left: 48px;
+            }
+
+            &.legend__picture--monster {
+              width: 60px;
+              bottom: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .legend {
+        &:nth-child(1) {
+          width: 100%;
+          height: 130px;
+
+          border-bottom-left-radius: 10px;
+          clip-path: polygon(0% 0%, 338px 0%, 100% 100%, 0% 100%);
+
+          .legend__picture {
+            &.legend__picture--molecule {
+              width: 20px;
+              top: 5px;
+              right: 49px;
+            }
+
+            &.legend__picture--monster {
+              width: 57px;
+              top: 0;
+              left: 0;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          min-width: 400px;
+          height: 130px;
+
+          border-bottom-right-radius: 10px;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7px 100%);
+        }
+      }
+    }
+  }
+
+  @include media(xxl) {
+    .legends__row {
+      gap: 7px;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        .legend {
+          min-height: 130px;
+          width: 100%;
+          border-radius: 10px;
+
+          .legend__title {
+            width: 80%;
+          }
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          }
+        }
+      }
+    }
+  }
+
+  @include media(lg) {
+    .legends__row {
+      flex-direction: column;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        .legend {
+          .legend__title {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  @include media(sm) {
+    .legends__row {
+      &:nth-child(1),
+      &:nth-child(2) {
+        .legend {
+          &:nth-child(1),
+          &:nth-child(2) {
+            min-width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fenkarol {
+  overflow: hidden;
+
+  .fenkarol__wrapper {
+    height: 757px;
+    position: relative;
+    padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(223, 52, 139, 0.40) 0%, rgba(223, 52, 139, 0.40) 100%), linear-gradient(90deg, #741750 0%, #B72081 100%);
+  }
+
+  .fenkarol__circle-bg {
+    width: 356px;
+    height: 324px;
+    position: absolute;
+    top: 138px;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+
+    border-radius: 356px;
+    background: #F471B8;
+    filter: blur(54px);
+  }
+
+  .fenkarol__title {
+    position: relative;
+    z-index: 2;
+
+    color: $COLOR_WHITE;
+    font-family: $ffNotoSans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: $bold;
+    line-height: normal;
+  }
+
+  .fenkarol__pack {
+    width: 696px;
+    position: relative;
+    left: 30px;
+    top: -35px;
+    z-index: 2;
+  }
+
+  .fenkarol__subtitle {
+    margin-top: -65px;
+    position: relative;
+    left: 20px;
+    z-index: 2;
+
+    color: $COLOR_WHITE;
+    text-align: left;
+    font-family: $ffFuturaPT;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: $medium;
+    line-height: normal;
+  }
+
+  .fenkarol__icons {
+    margin: 40px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .fenkarol__icon {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+
+      img {
+        width: 96px;
+      }
+
+      p {
+        width: 242px;
+        color: $COLOR_WHITE;
+        font-family: $ffFuturaPT;
+        font-size: 18px;
+        font-weight: $medium;
+      }
+
+      &:last-child {
+        p {
+          width: 126px;
+        }
+      }
+    }
+  }
+
+  .fenkarol__clock-picture {
+    position: absolute;
+    width: 161px;
+    top: 0;
+    right: 40px;
+  }
+
+  .fenkarol__concentration {
+    width: 204px;
+    height: 135px;
+    position: absolute;
+    top: 179px;
+    right: 48px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 13.896px;
+    border: 2px dashed #EB82B3;
+    opacity: 0.8;
+    background: $COLOR_WHITE;
+
+    p {
+      width: 175px;
+      color: $COLOR_PINK;
+      text-align: right;
+      font-family: "Calibri", sans-serif;
+      font-size: 20px;
+      font-weight: $bold;
+      line-height: 1;
+    }
+  }
+
+  .fenkarol__circle {
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    bottom: 43px;
+    right: 28px;
+    z-index: 3;
+
+    border-radius: 50%;
+    fill: rgba($COLOR_BLACK, 0.40);
+    backdrop-filter: blur(11.3px);
+
+    img {
+      width: 28px;
+      position: absolute;
+      top: 50%;
+      left: -14px;
+      transform: translateY(-50%);
+    }
+
+    p {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+
+      color: $COLOR_PINK;
+      font-family: $ffFuturaPT;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: $medium;
+      line-height: normal;
+    }
+  }
+
+  .fenkarol__patient {
+    width: 617px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 214px);
+  }
+
+  .fenkarol__pictures {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    .fenkarol__picture {
+      position: absolute;
+      z-index: 1;
+
+      &.fenkarol__picture--molecule-1 {
+        width: 29px;
+        top: 82px;
+        right: 231px;
+      }
+
+      &.fenkarol__picture--molecule-2 {
+        width: 11px;
+        top: 127px;
+        left: 101px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--molecule-3 {
+        width: 17px;
+        top: 143px;
+        right: 273px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--molecule-4 {
+        width: 23px;
+        top: 157px;
+        left: 66px;
+      }
+
+      &.fenkarol__picture--molecule-5 {
+        width: 39px;
+        top: 292px;
+        left: 51px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--molecule-6 {
+        width: 11px;
+        top: 386px;
+        right: 63px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--molecule-7 {
+        width: 18px;
+        bottom: 153px;
+        left: 265px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--molecule-8 {
+        width: 33px;
+        bottom: 104px;
+        left: 310px;
+        mix-blend-mode: lighten;
+      }
+
+      &.fenkarol__picture--monster {
+        width: 99px;
+        bottom: 0;
+        left: 184px;
+      }
+    }
+  }
+
+  @include media(xxl) {
+    .fenkarol__pack {
+      left: 105px;
+    }
+
+    .fenkarol__circle {
+      right: 208px;
+    }
+
+    .fenkarol__pictures {
+      .fenkarol__picture {
+        &.fenkarol__picture--monster {
+          left: 344px;
+        }
+      }
+    }
+  }
+
+  @include media(xl) {
+    .fenkarol__circle {
+      right: 121px;
+    }
+  }
+
+  @include media(lg) {
+    .fenkarol__pack {
+      left: 50px;
+    }
+
+    .fenkarol__circle {
+      right: 25px;
+    }
+  }
+
+  @include media(md) {
+    .fenkarol__wrapper {
+      height: auto;
+      align-items: center;
+
+      padding-bottom: 0;
+    }
+
+    .fenkarol__circle-bg {
+      height: 80%;
+    }
+
+    .fenkarol__title {
+      text-align: center;
+    }
+
+    .fenkarol__pack {
+      top: 0;
+      left: calc(50% - 136px);
+    }
+
+    .fenkarol__subtitle {
+      margin-top: 0;
+    }
+
+    .fenkarol__icons {
+      margin-left: 0;
+      position: relative;
+      z-index: 2;
+
+      .fenkarol__icon {
+        flex-direction: column;
+        align-items: center;
+
+        p {
+          width: 80%;
+          text-align: center;
+        }
+
+        &:last-child {
+          p {
+            width: 80%;
+          }
+        }
+      }
+    }
+
+    .fenkarol__concentration,
+    .fenkarol__clock-picture {
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+
+    .fenkarol__clock-picture {
+      margin-top: 24px;
+    }
+
+    .fenkarol__concentration {
+      p {
+        text-align: center;
+      }
+    }
+
+    .fenkarol__patient {
+      position: relative;
+      left: calc(50% - 301px);
+    }
+
+    .fenkarol__circle {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .fenkarol__pictures {
+      .fenkarol__picture {
+        &.fenkarol__picture--molecule-1 {
+          top: 161px;
+          right: 64px;
+        }
+
+        &.fenkarol__picture--molecule-2 {
+          top: 423px;
+          right: 153px;
+        }
+
+        &.fenkarol__picture--molecule-3 {
+          top: 126px;
+        }
+
+        &.fenkarol__picture--molecule-4 {
+          top: 457px;
+        }
+
+        &.fenkarol__picture--molecule-5 {
+          top: 668px;
+          left: 104px;
+        }
+
+        &.fenkarol__picture--molecule-6 {
+          top: 886px;
+          right: 130px;
+        }
+
+        &.fenkarol__picture--molecule-7 {
+          bottom: 292px;
+          left: 85px;
+        }
+
+        &.fenkarol__picture--molecule-8 {
+          bottom: 413px;
+          left: auto;
+          right: 84px;
+        }
+
+        &.fenkarol__picture--monster {
+          left: 14px;
+        }
+      }
+    }
+  }
+
+  @include media(sm) {
+    .fenkarol__pack {
+      left: calc(50% - 88px);
+    }
+
+    .fenkarol__patient {
+      left: calc(50% - 197px);
+    }
+
+    .fenkarol__circle {
+      bottom: 10px;
+      left: auto;
+      right: 15px;
+      transform: translateX(0);
+    }
+
+  }
+}

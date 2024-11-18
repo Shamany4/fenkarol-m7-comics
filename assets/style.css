@@ -1,0 +1,887 @@
+@charset "UTF-8";
+html {
+  height: auto !important;
+}
+
+#fenkarol-module-7-comics {
+  margin-bottom: 50px;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NotoSans"), url("../assets/fonts/NotoSans.woff2") format("woff2");
+}
+@font-face {
+  font-family: "NotoSans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NotoSans"), url("../assets/fonts/NotoSans-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 400;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Book.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 450;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: 700;
+  src: local("FuturaPT"), url("../assets/fonts/FuturaPT-Bold.woff2") format("woff2");
+}
+#fenkarol-module-7-comics div {
+  box-sizing: border-box;
+}
+#fenkarol-module-7-comics .title {
+  margin: 0;
+  color: #000;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .title {
+    font-size: 24px;
+  }
+}
+#fenkarol-module-7-comics p {
+  margin: 0;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(81, 79, 79, 0.9);
+}
+#fenkarol-module-7-comics ul,
+#fenkarol-module-7-comics ol {
+  margin: 5px 0 0 0;
+  padding: 0 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#fenkarol-module-7-comics ul li,
+#fenkarol-module-7-comics ol li {
+  color: rgba(81, 79, 79, 0.9);
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#fenkarol-module-7-comics ul li::before,
+#fenkarol-module-7-comics ol li::before {
+  content: "•";
+}
+#fenkarol-module-7-comics ol {
+  padding: 0 0 0 25px;
+  list-style: decimal;
+}
+#fenkarol-module-7-comics ol li::before {
+  content: "";
+}
+#fenkarol-module-7-comics .pink-bg {
+  padding: 24px;
+  border-radius: 10px;
+  background: #FBF3F7;
+}
+#fenkarol-module-7-comics .aqua-bg {
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 40px;
+  background: #C6F1F0;
+}
+#fenkarol-module-7-comics .align-center {
+  display: flex;
+  justify-content: center;
+}
+#fenkarol-module-7-comics .align-start {
+  display: flex;
+  align-items: flex-start;
+}
+#fenkarol-module-7-comics .color-gray {
+  color: rgba(81, 79, 79, 0.9);
+}
+#fenkarol-module-7-comics .color-black {
+  color: #000000;
+}
+#fenkarol-module-7-comics .color-pink {
+  color: #BC1E6A;
+}
+#fenkarol-module-7-comics .color-red {
+  color: #A33737;
+}
+#fenkarol-module-7-comics .color-turquoise {
+  color: #00938B;
+}
+#fenkarol-module-7-comics .color-white {
+  color: #FFFFFF;
+}
+#fenkarol-module-7-comics .fz-14 {
+  font-size: 14px;
+}
+#fenkarol-module-7-comics .fz-20 {
+  font-size: 20px;
+}
+#fenkarol-module-7-comics .mt-8 {
+  margin-top: 8px;
+}
+#fenkarol-module-7-comics .mt-10 {
+  margin-top: 10px;
+}
+#fenkarol-module-7-comics .mt-14 {
+  margin-top: 14px;
+}
+#fenkarol-module-7-comics .mt-16 {
+  margin-top: 16px;
+}
+#fenkarol-module-7-comics .mt-20 {
+  margin-top: 20px;
+}
+#fenkarol-module-7-comics .mt-24 {
+  margin-top: 24px;
+}
+#fenkarol-module-7-comics .mt-26 {
+  margin-top: 26px;
+}
+#fenkarol-module-7-comics .mt-30 {
+  margin-top: 30px;
+}
+#fenkarol-module-7-comics .mt-35 {
+  margin-top: 35px;
+}
+#fenkarol-module-7-comics .mt-40 {
+  margin-top: 40px;
+}
+#fenkarol-module-7-comics .mt-50 {
+  margin-top: 50px;
+}
+#fenkarol-module-7-comics .mt-56 {
+  margin-top: 56px;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-7-comics .mt-56 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .mt-56 {
+    margin-top: 24px;
+  }
+}
+#fenkarol-module-7-comics .mt-60 {
+  margin-top: 60px;
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-7-comics .mt-60 {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .mt-60 {
+    margin-top: 24px;
+  }
+}
+#fenkarol-module-7-comics .mb-24 {
+  margin-bottom: 24px;
+}
+#fenkarol-module-7-comics .p-0 {
+  padding: 0;
+}
+#fenkarol-module-7-comics .pl-16 {
+  padding-left: 16px;
+}
+#fenkarol-module-7-comics .pb-0 {
+  padding-bottom: 0;
+}
+#fenkarol-module-7-comics .w-medium {
+  font-weight: 450;
+}
+#fenkarol-module-7-comics .w-bold {
+  font-weight: 700;
+}
+#fenkarol-module-7-comics .main-layout .main-layout__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 93px;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .main-layout .main-layout__wrapper {
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+}
+#fenkarol-module-7-comics .main-content {
+  width: 745px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .main-content {
+    width: 100%;
+  }
+}
+#fenkarol-module-7-comics .quiz-bnr {
+  width: 358px;
+  height: 589px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #F5F5F5;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.17);
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .quiz-bnr {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .quiz-bnr {
+    width: 100%;
+  }
+}
+#fenkarol-module-7-comics .comics-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fenkarol-module-7-comics .comics-popup::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(86, 86, 86, 0.6) 0%, rgba(86, 86, 86, 0.6) 100%);
+}
+#fenkarol-module-7-comics .comics-popup .comics-popup__block {
+  width: 1245px;
+  position: relative;
+  z-index: 2;
+  background: #FFFFFF;
+}
+#fenkarol-module-7-comics .comics-popup .comics-popup__close {
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  right: -14.5px;
+  z-index: 3;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+#fenkarol-module-7-comics .comics-popup .comics-popup__close:hover {
+  cursor: pointer;
+}
+#fenkarol-module-7-comics .comics-popup .comics-popup__close img {
+  width: 14px;
+}
+#fenkarol-module-7-comics .comics-popup .comics-popup__library {
+  padding: 16px 40px;
+}
+#fenkarol-module-7-comics .comics-popup .comics {
+  width: 100%;
+}
+#fenkarol-module-7-comics .comics-popup .comics img {
+  max-width: 100%;
+}
+#fenkarol-module-7-comics .comics-popup .comics.comics--desktop {
+  display: block;
+}
+#fenkarol-module-7-comics .comics-popup .comics.comics--mobile {
+  display: none;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__controls {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__button-prev img,
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__button-next img {
+  width: 41px;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__button-prev.disabled,
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__button-next.disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__button-next img {
+  transform: rotate(180deg);
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__pagination {
+  margin-top: -3px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #FFFFFF;
+  opacity: 1;
+  border-radius: 50%;
+  border: 2px solid #BC1E6A;
+}
+#fenkarol-module-7-comics .comics-popup .comics-slider .comics-slider__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #BC1E6A;
+}
+#fenkarol-module-7-comics .comics-popup.is-open {
+  transform: scale(1);
+}
+#fenkarol-module-7-comics .comics-popup.is-open .comics-popup__block {
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .comics-popup .comics-popup__block {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #fenkarol-module-7-comics .comics-popup .comics-popup__library {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .comics-popup .comics-popup__close {
+    top: 10px;
+    right: 10px;
+    transform: translateY(0);
+  }
+  #fenkarol-module-7-comics .comics-popup .comics-popup__block {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics-popup__content {
+    padding: 0;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics-popup__library {
+    padding: 30px 16px 16px 16px;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics.comics--desktop {
+    display: none;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics.comics--mobile {
+    display: block;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics.comics--mobile img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #fenkarol-module-7-comics .comics-popup .comics.comics--mobile .swiper-slide {
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (max-height: 930px) {
+  #fenkarol-module-7-comics .comics-popup .comics-popup__close {
+    top: 10px;
+    right: 10px;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#fenkarol-module-7-comics .legends .legends__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#fenkarol-module-7-comics .legends .legends__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#fenkarol-module-7-comics .legends .legend {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F750A4;
+  overflow: hidden;
+}
+#fenkarol-module-7-comics .legends .legend:hover {
+  cursor: pointer;
+}
+#fenkarol-module-7-comics .legends .legend .legend__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 302px;
+  height: 83px;
+  border-radius: 302px;
+  background: rgba(255, 255, 255, 0.5);
+  mix-blend-mode: soft-light;
+  filter: blur(30px);
+}
+#fenkarol-module-7-comics .legends .legend .legend__title {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-7-comics .legends .legend .legend__title span {
+  font-size: 19px;
+}
+#fenkarol-module-7-comics .legends .legend .legend__picture {
+  position: absolute;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(1) {
+  width: 100%;
+  height: 102px;
+  border-top-left-radius: 10px;
+  clip-path: polygon(0% 0%, 100% 0%, 441px 100%, 0% 100%);
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(1) .legend__picture.legend__picture--molecule {
+  width: 21px;
+  top: 15px;
+  right: 69px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(2) {
+  min-width: 297px;
+  height: 102px;
+  border-top-right-radius: 10px;
+  clip-path: polygon(7px 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(2) .legend__picture.legend__picture--molecule {
+  width: 14px;
+  top: 26px;
+  left: 48px;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(2) .legend__picture.legend__picture--monster {
+  width: 60px;
+  bottom: 0;
+  right: 0;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(1) {
+  width: 100%;
+  height: 130px;
+  border-bottom-left-radius: 10px;
+  clip-path: polygon(0% 0%, 338px 0%, 100% 100%, 0% 100%);
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(1) .legend__picture.legend__picture--molecule {
+  width: 20px;
+  top: 5px;
+  right: 49px;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(1) .legend__picture.legend__picture--monster {
+  width: 57px;
+  top: 0;
+  left: 0;
+}
+#fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(2) {
+  min-width: 400px;
+  height: 130px;
+  border-bottom-right-radius: 10px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 7px 100%);
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .legends .legends__row {
+    gap: 7px;
+  }
+  #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend, #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend {
+    min-height: 130px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend .legend__title, #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend .legend__title {
+    width: 80%;
+  }
+  #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(1), #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(2), #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(1), #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(2) {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-7-comics .legends .legends__row {
+    flex-direction: column;
+  }
+  #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend .legend__title, #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend .legend__title {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(1), #fenkarol-module-7-comics .legends .legends__row:nth-child(1) .legend:nth-child(2), #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(1), #fenkarol-module-7-comics .legends .legends__row:nth-child(2) .legend:nth-child(2) {
+    min-width: auto;
+  }
+}
+#fenkarol-module-7-comics .fenkarol {
+  overflow: hidden;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__wrapper {
+  height: 757px;
+  position: relative;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(223, 52, 139, 0.4) 0%, rgba(223, 52, 139, 0.4) 100%), linear-gradient(90deg, #741750 0%, #B72081 100%);
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__circle-bg {
+  width: 356px;
+  height: 324px;
+  position: absolute;
+  top: 138px;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%);
+  border-radius: 356px;
+  background: #F471B8;
+  filter: blur(54px);
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__title {
+  position: relative;
+  z-index: 2;
+  color: #FFFFFF;
+  font-family: "NotoSans", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pack {
+  width: 696px;
+  position: relative;
+  left: 30px;
+  top: -35px;
+  z-index: 2;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__subtitle {
+  margin-top: -65px;
+  position: relative;
+  left: 20px;
+  z-index: 2;
+  color: #FFFFFF;
+  text-align: left;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__icons {
+  margin: 40px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon img {
+  width: 96px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon p {
+  width: 242px;
+  color: #FFFFFF;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 450;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon:last-child p {
+  width: 126px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__clock-picture {
+  position: absolute;
+  width: 161px;
+  top: 0;
+  right: 40px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__concentration {
+  width: 204px;
+  height: 135px;
+  position: absolute;
+  top: 179px;
+  right: 48px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13.896px;
+  border: 2px dashed #EB82B3;
+  opacity: 0.8;
+  background: #FFFFFF;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__concentration p {
+  width: 175px;
+  color: #BC1E6A;
+  text-align: right;
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+  width: 142px;
+  height: 142px;
+  position: absolute;
+  bottom: 43px;
+  right: 28px;
+  z-index: 3;
+  border-radius: 50%;
+  fill: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(11.3px);
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__circle img {
+  width: 28px;
+  position: absolute;
+  top: 50%;
+  left: -14px;
+  transform: translateY(-50%);
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__circle p {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #BC1E6A;
+  font-family: "FuturaPT", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__patient {
+  width: 617px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 214px);
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture {
+  position: absolute;
+  z-index: 1;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-1 {
+  width: 29px;
+  top: 82px;
+  right: 231px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-2 {
+  width: 11px;
+  top: 127px;
+  left: 101px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-3 {
+  width: 17px;
+  top: 143px;
+  right: 273px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-4 {
+  width: 23px;
+  top: 157px;
+  left: 66px;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-5 {
+  width: 39px;
+  top: 292px;
+  left: 51px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-6 {
+  width: 11px;
+  top: 386px;
+  right: 63px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-7 {
+  width: 18px;
+  bottom: 153px;
+  left: 265px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-8 {
+  width: 33px;
+  bottom: 104px;
+  left: 310px;
+  mix-blend-mode: lighten;
+}
+#fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--monster {
+  width: 99px;
+  bottom: 0;
+  left: 184px;
+}
+@media screen and (max-width: 1400px) {
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pack {
+    left: 105px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+    right: 208px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--monster {
+    left: 344px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+    right: 121px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pack {
+    left: 50px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+    right: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #fenkarol-module-7-comics .fenkarol .fenkarol__wrapper {
+    height: auto;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle-bg {
+    height: 80%;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__title {
+    text-align: center;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pack {
+    top: 0;
+    left: calc(50% - 136px);
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__subtitle {
+    margin-top: 0;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__icons {
+    margin-left: 0;
+    position: relative;
+    z-index: 2;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon {
+    flex-direction: column;
+    align-items: center;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon p {
+    width: 80%;
+    text-align: center;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__icons .fenkarol__icon:last-child p {
+    width: 80%;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__concentration,
+  #fenkarol-module-7-comics .fenkarol .fenkarol__clock-picture {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__clock-picture {
+    margin-top: 24px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__concentration p {
+    text-align: center;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__patient {
+    position: relative;
+    left: calc(50% - 301px);
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-1 {
+    top: 161px;
+    right: 64px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-2 {
+    top: 423px;
+    right: 153px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-3 {
+    top: 126px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-4 {
+    top: 457px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-5 {
+    top: 668px;
+    left: 104px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-6 {
+    top: 886px;
+    right: 130px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-7 {
+    bottom: 292px;
+    left: 85px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--molecule-8 {
+    bottom: 413px;
+    left: auto;
+    right: 84px;
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pictures .fenkarol__picture.fenkarol__picture--monster {
+    left: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #fenkarol-module-7-comics .fenkarol .fenkarol__pack {
+    left: calc(50% - 88px);
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__patient {
+    left: calc(50% - 197px);
+  }
+  #fenkarol-module-7-comics .fenkarol .fenkarol__circle {
+    bottom: 10px;
+    left: auto;
+    right: 15px;
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

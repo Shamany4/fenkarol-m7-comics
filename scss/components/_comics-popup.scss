@@ -1,0 +1,220 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.comics-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  z-index: 99999999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(0deg, rgba(86, 86, 86, 0.60) 0%, rgba(86, 86, 86, 0.60) 100%);
+  }
+
+  .comics-popup__block {
+    width: 1245px;
+    position: relative;
+    z-index: 2;
+    background: $COLOR_WHITE;
+  }
+
+  .comics-popup__close {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 0;
+    right: -14.5px;
+    z-index: 3;
+    transform: translateY(-100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: $COLOR_WHITE;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      width: 14px;
+    }
+  }
+
+  .comics-popup__library {
+    padding: 16px 40px;
+  }
+
+  .comics {
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+
+    &.comics--desktop {
+      display: block;
+    }
+
+    &.comics--mobile {
+      display: none;
+    }
+  }
+
+  .comics-slider {
+    .comics-slider__controls {
+      margin-top: 40px;
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 37px;
+    }
+
+    .comics-slider__button-prev,
+    .comics-slider__button-next {
+      img {
+        width: 41px;
+      }
+
+      &.disabled {
+        opacity: 0.1;
+        pointer-events: none;
+      }
+    }
+
+    .comics-slider__button-next {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .comics-slider__pagination {
+      margin-top: -3px;
+      width: auto;
+
+      display: flex;
+      align-items: center;
+      gap: 37px;
+
+      .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: $COLOR_WHITE;
+        opacity: 1;
+
+        border-radius: 50%;
+        border: 2px solid $COLOR_PINK;
+
+        &.swiper-pagination-bullet-active {
+          background: $COLOR_PINK;
+        }
+      }
+    }
+  }
+
+  &.is-open {
+    transform: scale(1);
+
+    .comics-popup__block {
+      animation: slide-in-bottom .5s cubic-bezier(.25, .46, .45, .94) both;
+    }
+  }
+
+  @include media(xxl) {
+    .comics-popup__block {
+      width: 95%;
+    }
+  }
+
+  @include media(xl) {
+    .comics-popup__library {
+      padding: 16px;
+    }
+  }
+
+  @include media(sm) {
+    .comics-popup__close {
+      top: 10px;
+      right: 10px;
+      transform: translateY(0);
+    }
+
+    .comics-popup__block {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    .comics-popup__content {
+      padding: 0;
+    }
+
+    .comics-popup__library {
+      padding: 30px 16px 16px 16px;
+    }
+
+    .comics {
+      &.comics--desktop {
+        display: none;
+      }
+
+      &.comics--mobile {
+        display: block;
+
+        img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+
+        .swiper-slide {
+          width: 100%;
+
+          display: flex;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-height: 930px) {
+    .comics-popup__close {
+      top: 10px;
+      right: 10px;
+      transform: translateY(0);
+    }
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
