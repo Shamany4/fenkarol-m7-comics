@@ -200,10 +200,26 @@
   }
   
   @media screen and (max-height: 930px) {
+    align-items: flex-start;
+
     .comics-popup__close {
       top: 10px;
       right: 10px;
       transform: translateY(0);
+    }
+
+    .comics-popup__block {
+      margin-top: 30px;
+      height: 90%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    @include media(sm) {
+      .comics-popup__block {
+        margin-top: 0;
+        height: 100%;
+      }
     }
   }
 }

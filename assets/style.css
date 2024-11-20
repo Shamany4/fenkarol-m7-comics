@@ -404,10 +404,25 @@ html {
   }
 }
 @media screen and (max-height: 930px) {
+  #fenkarol-module-7-comics .comics-popup {
+    align-items: flex-start;
+  }
   #fenkarol-module-7-comics .comics-popup .comics-popup__close {
     top: 10px;
     right: 10px;
     transform: translateY(0);
+  }
+  #fenkarol-module-7-comics .comics-popup .comics-popup__block {
+    margin-top: 30px;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-height: 930px) and (max-width: 576px) {
+  #fenkarol-module-7-comics .comics-popup .comics-popup__block {
+    margin-top: 0;
+    height: 100%;
   }
 }
 @keyframes slide-in-bottom {
